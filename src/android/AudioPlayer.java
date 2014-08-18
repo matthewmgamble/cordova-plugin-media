@@ -438,7 +438,11 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
         this.player.setVolume(volume, volume);
     }
 
-    /**
+    public void setOutputDevice(int device) {
+    	this.player.setAudioOutputDevice(device);
+    }
+
+	/**
      * attempts to put the player in play mode
      * @return true if in playmode, false otherwise
      */

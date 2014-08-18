@@ -152,6 +152,9 @@ Media.prototype.setVolume = function(volume) {
     exec(null, null, "Media", "setVolume", [this.id, volume]);
 };
 
+Media.prototype.setOutputDevice = function(device) {
+    exec(null, null, "Media", "setDevice", [this.id, device]);
+};
 /**
  * Audio has status update.
  * PRIVATE
